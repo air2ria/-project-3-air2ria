@@ -1,3 +1,5 @@
+#include "QuaternionRotation.hpp"
+
 bool QuaternionRotation::operator==(const QuaternionRotation& other) const {
     return std::abs(w - other.w) < 0.001 &&
            std::abs(x - other.x) < 0.001 &&
