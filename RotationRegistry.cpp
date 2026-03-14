@@ -22,7 +22,7 @@ double RotationRegistry::getAverageMagnitude() const {
     for (Rotation* r : items) {
         AxisAngleRotation* aar = dynamic_cast<AxisAngleRotation*>(r);
         if (aar) {
-            total += aar->getAxis().magnitude();  // adjust to your actual method name
+            total += aar->getAxis().magnitude(); 
             count++;
         }
     }
